@@ -107,7 +107,7 @@ object RestApi {
             it.accessManager(AccessManager::manage)
             it.addStaticFiles("html")
             it.addSinglePageRoot("/", "html/index.html")
-            it.enforceSsl = true
+            it.enforceSsl = false
         }.routes {
 
             path("api") {
