@@ -292,7 +292,7 @@ export class UserService {
         return this.httpClient.get<SessionId>(`${this.configuration.basePath}/api/user/session`,
             {
                 responseType: <any>responseType,
-                withCredentials: false,
+                withCredentials: this.configuration.withCredentials,
                 headers: headers,
                 observe: observe,
                 reportProgress: reportProgress
