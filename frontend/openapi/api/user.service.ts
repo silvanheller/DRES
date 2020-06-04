@@ -292,7 +292,7 @@ export class UserService {
         return this.httpClient.get<SessionId>(`${this.configuration.basePath}/api/user/session`,
             {
                 responseType: <any>responseType,
-                withCredentials: this.configuration.withCredentials,
+                withCredentials: this.configuration.,
                 headers: headers,
                 observe: observe,
                 reportProgress: reportProgress
@@ -400,7 +400,7 @@ export class UserService {
             loginRequest,
             {
                 responseType: <any>responseType,
-                withCredentials: this.configuration.withCredentials,
+                withCredentials: false,
                 headers: headers,
                 observe: observe,
                 reportProgress: reportProgress
