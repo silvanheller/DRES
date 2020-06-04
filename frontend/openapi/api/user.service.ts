@@ -288,6 +288,7 @@ export class UserService {
             responseType = 'text';
         }
 
+        console.log(this.configuration.basePath);
         return this.httpClient.get<SessionId>(`${this.configuration.basePath}/api/user/session`,
             {
                 responseType: <any>responseType,
